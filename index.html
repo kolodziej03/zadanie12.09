@@ -1,0 +1,46 @@
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label>liczba1<input type="text" name="liczby" id="l1" /></label>
+      <label>liczba2<input type="text" name="liczby" id="l2" /></label>
+      <button id="dodawanie">+</button><button id="odejmowanie">-</button
+      ><button id="mnozenie">*</button><button id="dzielenie">/</button>
+    </form>
+    <p></p>
+    <script>
+      const x = document.querySelector("#l1");
+      const y = document.querySelector("#l2");
+      const b1 = document.querySelector("#dodawanie");
+      const b2 = document.querySelector("#odejmowanie");
+      const b3 = document.querySelector("#mnozenie");
+      const b4 = document.querySelector("#dzielenie");
+      const par = document.querySelector("p");
+      b1.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        const s = parseInt(x.value) + parseInt(y.value);
+        par.innerHTML = s;
+      });
+      b2.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        const s = parseInt(x.value) - parseInt(y.value);
+        par.innerHTML = s;
+      });
+      b3.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        const s = parseInt(x.value) * parseInt(y.value);
+        par.innerHTML = s;
+      });
+      b4.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        const s = parseInt(x.value) / parseInt(y.value);
+        par.innerHTML = s;
+      });
+    </script>
+  </body>
+</html>
