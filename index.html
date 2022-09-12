@@ -23,23 +23,47 @@
       const par = document.querySelector("p");
       b1.addEventListener("click", function (evt) {
         evt.preventDefault();
-        const s = parseInt(x.value) + parseInt(y.value);
-        par.innerHTML = s;
+        const w1 = parseInt(x.value) * 0;
+        const w2 = parseInt(y.value) * 0;
+        if (w1 == 0 && w2 == 0) {
+          const s = parseInt(x.value) + parseInt(y.value);
+          par.innerHTML = s;
+        } else {
+          alert("Nie podales liczby");
+        }
       });
       b2.addEventListener("click", function (evt) {
         evt.preventDefault();
-        const s = parseInt(x.value) - parseInt(y.value);
-        par.innerHTML = s;
+        const w1 = parseInt(x.value) * 0;
+        const w2 = parseInt(y.value) * 0;
+        if (w1 == 0 && w2 == 0) {
+          const s = parseInt(x.value) - parseInt(y.value);
+          par.innerHTML = s;
+        } else {
+          alert("Nie podales liczby");
+        }
       });
       b3.addEventListener("click", function (evt) {
         evt.preventDefault();
-        const s = parseInt(x.value) * parseInt(y.value);
-        par.innerHTML = s;
+        const w1 = parseInt(x.value) * 0;
+        const w2 = parseInt(y.value) * 0;
+        if (w1 == 0 && w2 == 0) {
+          const s = parseInt(x.value) * parseInt(y.value);
+          par.innerHTML = s;
+        } else {
+          alert("Nie podales liczby");
+        }
       });
       b4.addEventListener("click", function (evt) {
         evt.preventDefault();
-        const s = parseInt(x.value) / parseInt(y.value);
-        par.innerHTML = s;
+        const w1 = parseInt(x.value) * 0;
+        const w2 = parseInt(y.value) * 0;
+        if (w1 == 0 && w2 == 0) {
+          const s = parseInt(x.value) / parseInt(y.value);
+          par.innerHTML = s;
+        } else {
+          alert("Nie podales liczby");
+        }
       });
     </script>
   </body>
